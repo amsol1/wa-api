@@ -1,0 +1,5 @@
+There are different possibilities how to resolve:
+
+npm rebuild bcrypt --build-from-source (as stated in the comments already) check that your node version for recompiling matches the test/production version
+npm install node-pre-gyp -g then npm rebuild bcrypt --build-from-source
+Delete the folder containing npm-bcrypt on the deployment server inside your project folder node_modules (..programs\server\node_modules). On the deployment server, run npm install bcrypt
